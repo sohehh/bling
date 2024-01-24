@@ -316,6 +316,7 @@
         font-size: 18px;
         line-height: 20px;
         color: white;
+        text-align: center;
     }
     .social {
         text-align: center;
@@ -636,6 +637,7 @@
         font-size: 16px;
         line-height: 20px;
         color: white;
+        text-align: center;
     }
     .social {
         text-align: center;
@@ -854,7 +856,7 @@
     .function-text {
         width: 100%;
         display: flex;
-        gap: 20px;
+        gap: 12px;
         flex-direction: column; /* 세로 방향으로 정렬 */
     }
 
@@ -885,9 +887,6 @@
         font-size: 15px;
         line-height: 140%;
         word-break: keep-all;
-    }
-    .function-text__sub--top {
-        margin-top: 15px;
     }
     .cont-function__img {
         object-fit: contain;
@@ -948,6 +947,7 @@
         font-size: 14px;
         line-height: 20px;
         color: white;
+        text-align: center;
     }
     .social {
         text-align: center;
