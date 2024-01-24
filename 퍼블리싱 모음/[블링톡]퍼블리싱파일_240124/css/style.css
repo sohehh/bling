@@ -16,9 +16,18 @@
 
     
 }
-
+html, body {
+    height: 100%;
+}
 .header__logo {
     margin-top: 7px;
+}
+.main-intro {
+    min-height: 100vh;
+    height: auto;
+}
+.main-intro__inner {
+    justify-content: center;
 }
 @media all and (min-width:1023px) {
 
@@ -671,11 +680,14 @@
         align-items: center;
     }
     .header__logo {
-        width: 134px;
+        width: 120px;
         margin-left: 40px;
     }
     .header__logo .header__anchor .header__img {
         width: 100%;
+    }
+    .header__anchor {
+        display: block;
     }
     .header__inner .social-nav {
         display: none;
@@ -749,7 +761,7 @@
     }
     .social-nav__anchor--big {
         background-color: white;
-        padding: 11px 17px;                
+        padding: 7px 17px;                
     }
     .social-nav__img--big {
         width: 22px;
