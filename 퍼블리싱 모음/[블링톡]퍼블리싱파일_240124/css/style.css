@@ -373,6 +373,7 @@ html, body {
 
 @media all and (min-width:716px) and (max-width:1022px) { 
 
+
     .header__inner {
         width: 100%;
         height: 70px;
@@ -693,6 +694,7 @@ html, body {
 }
 
 @media all and (max-width:715px) {
+
     .header__inner {
         width: 100%;
         height: 70px;

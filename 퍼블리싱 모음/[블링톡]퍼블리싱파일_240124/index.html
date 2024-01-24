@@ -133,7 +133,7 @@
                             </div>
                             <img class="cont-function__img cont-function__img--middle" src="./img/appFrame02.png" alt="앱화면02">
                         </div>
-                        <div class="cont-function__item cont-function__item--column" data-aos="fade-up"
+                        <div class="cont-function__item cont-function__item--column aos-element" data-aos="fade-up"
                         data-aos-delay="300">
                             <div class="function-text function-text--half">
                                 <div class="function-text__header">
@@ -230,7 +230,7 @@
                             </div>
                             <img class="cont-function__img cont-function__img--small01" src="./img/appFrame06.svg" alt="앱화면06">
                         </div>
-                        <div class="cont-function__item cont-function__item--column02" data-aos="fade-up" data-aos-delay="300">
+                        <div class="cont-function__item cont-function__item--column02 aos-element" data-aos="fade-up" data-aos-delay="300">
                             <div class="function-text function-text--half">
                                 <div class="function-text__header">
                                     <ul class="hashtag">
@@ -310,6 +310,27 @@
             }
         })
         
+        // 모바일 사이즈 체크
+        function checkMobileSize() {
+
+            if (window.innerWidth <= 1022) {
+                var elements = document.getElementsByClassName('aos-element');
+                for (var i = 0; i < elements.length; i++) {
+                elements[i].removeAttribute('data-aos-delay');
+                }
+            } else {
+                var elements = document.getElementsByClassName('aos-element');
+                for (var i = 0; i < elements.length; i++) {
+                elements[i].setAttribute('data-aos-delay', '300');
+                }
+            }
+        }
+
+        // 페이지 로드 시 checkMobileSize함수실행
+        window.addEventListener('load', checkMobileSize);
+
+        // 창 크기 변경 시 checkMobileSize함수실행
+        window.addEventListener('resize', checkMobileSize);
     </script>
 </body>
 </html>
