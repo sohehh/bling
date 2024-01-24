@@ -12,7 +12,7 @@
         <div class="header__inner">
             <h1 class="header__logo">
                 <a class="header__anchor" href="javascript: void(0);">
-                    <img class="header__img" src="./img/logo_black.png" alt="블링톡 로고">
+                    <img class="header__img" src="./img/logo_white_main.png" alt="블링톡 로고">
                 </a>
             </h1>
             <nav class="social-nav">
@@ -279,5 +279,22 @@
             </div>
         </div>
     </footer>
+    <script>
+        const header = document.querySelector('.header');
+        const headerImg = document.querySelector('.header__img');
+        const headerHeight = header.getBoundingClientRect().height;
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY>headerHeight) {
+                header.setAttribute('style','background-color: white;');
+                headerImg.setAttribute('src','./img/logo_black.png');
+            } else {
+                header.setAttribute('style','background-color: var(--primary-color); border-bottom: 1px solid #ffffff45');
+                headerImg.setAttribute('src','./img/logo_white_main.png');
+
+            }
+        })
+        
+    </script>
 </body>
 </html>

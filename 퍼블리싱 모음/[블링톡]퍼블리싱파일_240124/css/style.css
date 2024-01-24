@@ -26,6 +26,7 @@ html, body {
     min-height: 100vh;
     min-height: 100dvh;
     height: auto;
+    padding-top: 70px;
 }
 .main-intro__inner {
     justify-content: center;
@@ -40,12 +41,18 @@ html, body {
     position: absolute;
     animation: motion 0.5s linear 0s infinite alternate; 
 }
+.header {
+    width: 100%;
+    transition: all 0.5s;
+    position:fixed
+}
 @media all and (min-width:1023px) {
 
     /* header style */
     .header {
         width: 100%;
-        background-color: white;
+        background-color: var(--primary-color);
+        border-bottom: 1px solid #ffffff45;
     }
     .header__inner {
         width: 100%;
@@ -102,7 +109,6 @@ html, body {
     }
     .main-intro__text {
         display: inline-block;
-        margin-top: 118px;
     }
     .main-intro__copy {
         width: 364px;
@@ -142,6 +148,7 @@ html, body {
     .main-intro__arrow {
         width: 40px;
         margin: 82px auto 0;
+        position: relative;
     }
     
     /* main-cont style */
@@ -417,7 +424,6 @@ html, body {
     }
     .main-intro__text {
         display: inline-block;
-        margin-top: 118px;
     }
     .main-intro__copy {
         width: 326px;
@@ -458,6 +464,7 @@ html, body {
     .main-intro__arrow {
         width: 40px;
         margin: 82px auto 0;
+        position: relative;
     }
     
     /* main-cont style */
@@ -742,7 +749,6 @@ html, body {
     }
     .main-intro__text {
         display: inline-block;
-        margin-top: 118px;
     }
     .main-intro__copy {
         width: 224px;
@@ -783,8 +789,11 @@ html, body {
     .main-intro__arrow {
         width: 40px;
         margin: 82px auto 0;
+        position: relative;
     }
-    
+    .main-intro__arrow img {
+        top: 90px;
+    }
     /* main-cont style */
     .main-cont {
         width: 100%;
