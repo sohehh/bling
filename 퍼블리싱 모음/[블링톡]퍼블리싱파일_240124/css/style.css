@@ -24,6 +24,7 @@ html, body {
 }
 .main-intro {
     min-height: 100vh;
+    min-height: 100dvh;
     height: auto;
 }
 .main-intro__inner {
