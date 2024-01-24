@@ -26,12 +26,14 @@ html, body {
     min-height: 100vh;
     min-height: 100dvh;
     height: auto;
-    padding-top: 70px;
 }
 .main-intro__inner {
     justify-content: center;
 }
-
+.main-intro {
+    display: flex;
+    align-items: center;
+}
 /* animation  */
 @keyframes motion {
 	0% {margin-top: 0px;} /* 처음 위치 */
