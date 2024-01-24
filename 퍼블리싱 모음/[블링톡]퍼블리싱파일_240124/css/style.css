@@ -109,6 +109,7 @@ html, body {
     }
     .main-intro__text {
         display: inline-block;
+        margin-top: 60px;
     }
     .main-intro__copy {
         width: 364px;
@@ -385,8 +386,9 @@ html, body {
     .header__logo .header__anchor .header__img {
         width: 100%;
     }
-    .social-nav {
+    .header__inner .social-nav {
         margin-right: 40px;
+        display: none;
     }
     .social-nav__list {
         display: flex;
