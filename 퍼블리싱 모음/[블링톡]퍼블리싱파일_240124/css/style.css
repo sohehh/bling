@@ -44,7 +44,8 @@ html, body {
 .header {
     width: 100%;
     transition: all 0.5s;
-    position:fixed
+    position:fixed;
+    z-index: 1000;
 }
 @media all and (min-width:1023px) {
 
