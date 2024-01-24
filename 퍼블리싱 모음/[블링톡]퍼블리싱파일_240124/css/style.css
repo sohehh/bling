@@ -30,6 +30,16 @@ html, body {
 .main-intro__inner {
     justify-content: center;
 }
+
+/* animation  */
+@keyframes motion {
+	0% {margin-top: 0px;} /* 처음 위치 */
+	100% {margin-top: 10px;} /* 마지막 위치 */
+}
+.main-intro__arrow img {
+    position: absolute;
+    animation: motion 0.5s linear 0s infinite alternate; 
+}
 @media all and (min-width:1023px) {
 
     /* header style */
@@ -682,7 +692,7 @@ html, body {
     }
     .header__logo {
         width: 120px;
-        margin-left: 40px;
+        margin-left: 16px;
     }
     .header__logo .header__anchor .header__img {
         width: 100%;
@@ -783,7 +793,7 @@ html, body {
         width: 100%;
         max-width: 800px;
         margin: 0 auto;
-        padding: 70px 20px;
+        padding: 70px 16px;
     }
     .main-cont--gray {
         background-color: var(--gray02-color);
@@ -853,7 +863,7 @@ html, body {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 16px;
     }
     .cont-function__item {
         background-color: white;
